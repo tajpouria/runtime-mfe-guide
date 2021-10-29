@@ -12,8 +12,9 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./ProductsIndex": "./src/index",
+        "./ProductsShow": "./src/bootstrap",
       },
+      shared: ["faker"],
     }),
   ],
   devtool: "eval-cheap-source-map",

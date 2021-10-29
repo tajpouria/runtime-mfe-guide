@@ -12,8 +12,9 @@ module.exports = {
       name: "card",
       filename: "remoteEntry.js",
       exposes: {
-        "./CardShow": "./src/index",
+        "./CardShow": "./src/bootstrap",
       },
+      shared: ["faker"]
     }),
   ],
   devtool: "eval-cheap-source-map",
